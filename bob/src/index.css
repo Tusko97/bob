@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Comforter&family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Lora:ital@0;1&family=MonteCarlo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400&family=Moon+Dance&family=Open+Sans:ital,wght@0,700;1,500&family=Playfair:wght@300;700;900&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Comforter&family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Lora:ital@0;1&family=MonteCarlo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400&family=Moon+Dance&family=Open+Sans:ital,wght@0,700;1,500&family=Playfair:wght@300;700;900&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+
+:root {
+  --primary: #28262b; 
+  --primary1: #f5f1ed; 
+  --primary2: #1a936f; 
+  --primary3: #f3f4f6;
+  --secondary: #202c39; 
+  --secondary1: #adb5bd; 
+  --secondary2: #6c757d; 
+  --secondary3: #0b090a; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer base {
+  body {
+    @apply font-[Montserrat]
+  }
+  .links {
+    @apply px-1 dark:text-[var(--primary)] cursor-pointer hover:text-[var(--secondary2)] dark:text-[var(--primary1)] dark:hover:text-[var(--secondary2)]
+  }
+  h1 {
+    @apply font-[Lato]
+  }
+  .mob-links {
+    @apply py-3 text-lg border-b border-[var(--primary1)] cursor-pointer hover:text-[var(--primary1)] dark:text-[var(--primary1)] dark:border-[var(--secondary2)] dark:hover:text-[var(--secondary2)]
+  }
+  .btn {
+    @apply bg-[var(--secondary1)] dark:bg-[var(--primary)] dark:text-[white] px-8 py-2 rounded-md text-xl hover:bg-[var(--primary3)] dark:hover:bg-[var(--primary2)] hover:shadow-xl
+  }
+  .active-link {
+    @apply text-[var(--primary2)] dark:text-[var(--primary2)]
+  }
+  .icon {
+    @apply hover:text-[var(--primary)] text-[var(--secondary2)]
+  }
+  .icon-mob {
+    @apply cursor-pointer hover:text-[var(--primary1)] dark:hover:text-[var(--secondary2)]
+  }
+  .hamburger {
+    @apply cursor-pointer
+  }
+  .title {
+    @apply flex justify-center text-3xl font-bold mb-4 mt-8 text-[var(--secondary2)] dark:text-[var(--primary2)] 
+  }
+  .logo {
+    @apply dark:bg-[var(--secondary3)] relative shadow-md rounded hover:scale-105 duration-500 
+  }
+  .logo-labels {
+    @apply absolute bottom-0  md:text-[md] lg:text-lg dark:text-[var(--secondary1)] text-sm
+  }
+  .project {
+    @apply flex justify-evenly py-2 bottom-0 w-full font-bold md:text-3xl text-[var(--secondary2)] 
+  }
+  .subtitle {
+    @apply border-b-2 dark:border-[var(--secondary2)] pb-1
+  }
+  .span {
+    @apply text-[var(--primary2)] font-bold dark:text-[var(--secondary2)]
+  }
+  .form-input {
+    @apply w-full bg-[var(--primary3)] p-3 rounded-lg outline-none dark:bg-[black] dark:text-[#fff]
+  }
 }
+
+.animated-image {
+  animation: rotate 4s cubic-bezier(0.42, 0, 0.58, 1) 2;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+
+
