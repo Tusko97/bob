@@ -19,24 +19,24 @@ const Projects = () => {
             </div>
           </div>
           <div className='relative mx-5 rounded-md'>
-            <img src="./images/Screenshot from 2023-07-25 14-52-53.png" alt="event-booking" className='animated-image' />
+            <img src="./images/karthik-balakrishnan-Y4zNMW3pQAs-unsplash.jpg" alt="event-booking" className='animated-image' />
             <div className='project'>
               <a href="https://events-manager-rose.vercel.app" target="_blank" className='hover:text-[var(--secondary)]'>CODE</a>
-              <a href="/" className='hover:text-[var(--secondary)]'>DEMO</a>
+              
             </div>
           </div>
           <div className='relative mx-5 rounded-md'>
-            <img src="./images/Fast_X_poster.jpg" alt="movie-shop" className='animated-image' />
+            <img src="./images/justin-essah-8bPw733XN-g-unsplash.jpg" alt="beauty-shop" className='animated-image' />
             <div className='project'>
-              <a href="https://main--glittery-churros-16eb39.netlify.app/" target="_blank" className='hover:text-[var(--secondary)]'>CODE</a>
-              <a href="/" className='hover:text-[var(--secondary)]'>DEMO</a>
+              <a href="https://the-nail-spot.netlify.app/" target="_blank" className='hover:text-[var(--secondary)]'>CODE</a>
+              
             </div>
           </div>
           <div className='relative mx-5 rounded-md'>
-            <img src="./images/covid.jpg" alt="motor-app" className='animated-image' />
+            <img src="./images/yura-fresh-n31x0hhnzOs-unsplash.jpg" alt="to-do app" className='animated-image' />
             <div className='project'>
-              <a href="https://github.com/DKarimi90/Covid-Tracker" target="_blank" className='hover:text-[var(--secondary)]'>CODE</a>
-              <a href="/" className='hover:text-[var(--secondary)]'>DEMO</a>
+              <a href="https://strong-raindrop-be683c.netlify.app/" target="_blank" className='hover:text-[var(--secondary)]'>CODE</a>
+              
             </div>
           </div>
         </div>
